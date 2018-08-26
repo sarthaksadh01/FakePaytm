@@ -27,9 +27,9 @@ public class Success extends Activity {
         nm = findViewById(R.id.name);
         phn = findViewById(R.id.number);
         dt =findViewById(R.id.date);
-        amnt.setText("\u20B9"+money);
+        amnt.setText(String.format("₹%s", money));
         phn.setText(phone);
-        nm.setText(name+" "+"Wallet linked to");
+        nm.setText(String.format("%s Wallet linked to", name));
         Calendar c = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String strDate = sdf.format(c.getTime());
