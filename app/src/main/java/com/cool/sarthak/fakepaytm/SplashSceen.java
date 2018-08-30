@@ -20,7 +20,7 @@ public class SplashSceen extends Activity {
 
 
 
-                    Intent intent = new Intent(SplashSceen.this,Valsarthak.class);
+                    Intent intent = new Intent(SplashSceen.this,Home.class);
                     startActivity(intent);
                     finish();
 

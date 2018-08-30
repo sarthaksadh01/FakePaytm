@@ -34,7 +34,7 @@
 
 
        <com.airbnb.lottie.LottieAnimationView
-           app:lottie_colorFilter="#34B575"
+
            android:layout_marginLeft="20dp"
            android:id="@+id/lottieAnimationView"
            android:layout_width="50dp"
@@ -42,7 +42,7 @@
            android:layout_alignParentBottom="true"
            android:layout_centerHorizontal="true"
            app:lottie_autoPlay="true"
-           app:lottie_fileName="tick.json"
+           app:lottie_fileName="success.json"
            app:lottie_loop="true" />
 
    </LinearLayout>

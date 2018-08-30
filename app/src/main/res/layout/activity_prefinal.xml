@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prefinal"
+    android:background="#ffffff">
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/arrow"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <TextView
+        android:id="@+id/nm"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="NAME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/no"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="8076911425"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_marginTop="25dp"
+        android:id="@+id/c"
+        android:drawableLeft="@drawable/rs"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:hint="Amount"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="29dp"
+        android:id="@+id/textv"
+        android:textColor="#A9A9A9"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/pay"
+        android:text="Money will be sent from your"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textv"
+        android:layout_toEndOf="@+id/textv"
+        android:text=" Paytm Wallet"
+        android:textColor="@color/colorPrimary" />
+    <Button
+        android:onClick="paym"
+        android:id="@+id/pay"
+        android:text="Pay"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_colorFilter="@color/colorPrimary"
+        android:visibility="invisible"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/paytmload"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="paytmload.json"
+        app:lottie_loop="true" />
+
+</RelativeLayout>
